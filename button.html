@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>buttonBar.html
-    <meta charset="UTF-8">
-    <title>Button</title>
-    <link rel="import" href="polymer.html">
+<head>
+  <meta charset="UTF-8">
+  <title>Button</title>
+  <link rel="import" href="polymer.html">
 </head>
 <body>
 <dom-module id="by-button">
   <template>
     <style>
-        :host{
-            display: inline-block;
-            width:50px;
-            height:16px;
-            padding: 5px;
-            line-height:16px;
-            font-size: 12px;
-            text-align: center;
-            background-color: #00acc1;
-            float:left;
-            border:1px solid darkslategray;
-            border-right:0;
-            cursor:pointer;
-        }
+      :host{
+        display: inline-block;
+        width:50px;
+        height:16px;
+        padding: 5px;
+        line-height:16px;
+        font-size: 12px;
+        text-align: center;
+        background-color: #00acc1;
+        float:left;
+        border:1px solid darkslategray;
+        cursor:pointer;
+      }
     </style>
     <content></content>
   </template>
     <script>
-        Polymer({
-            is: 'by-button'
-        });
+      Polymer({
+          is: 'by-button'
+      });
     </script>
 </dom-module>
 </body>
