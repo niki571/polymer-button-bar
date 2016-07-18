@@ -27,7 +27,13 @@
   </template>
     <script>
       Polymer({
-          is: 'by-button'
+        is: 'by-button',
+        properties:{
+          name:{
+            type:String,
+            reflectToAttribute: true
+          }
+        }
       });
     </script>
 </dom-module>

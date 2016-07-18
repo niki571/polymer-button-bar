@@ -21,7 +21,7 @@
 <template>
   <div class="button-container">
     <template is="dom-repeat" items="[[regions]]" as="region">
-      <by-button on-tap="_onRegionTap">[[region]]</by-button>
+      <by-button on-tap="_onRegionTap" name="[[region]]">[[region]]</by-button>
     </template>
   </div>
 </template>
@@ -29,7 +29,7 @@
     Polymer({
       is: 'by-button-bar',
       properties: {
-        regions:{
+        regions: {
           type: Array,
           value: ['APAC', 'EMEA', 'EUROPE', 'NORTH', 'Australia'],
           notify: true
